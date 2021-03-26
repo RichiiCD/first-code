@@ -1,0 +1,157 @@
+/* Reglas por defecto */
+
+* {
+    box-sizing: border-box;
+    /* https://fonts.google.com/ */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Estilos de la página */
+
+#header {
+    text-align: center;
+    background-image: url('../img/imagen_header.jpg');
+    background-size: cover;
+    padding: 100px;
+    /* margin-bottom: 20px; */
+}
+
+#header h1 {
+    font-size: 70px;
+}
+
+#header h2 {
+    font-size: 50px;
+}
+
+#map {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    /* style="border:0;" */
+}
+
+
+/* Estilos de las columnas */
+
+.column-1 {
+    width: 100%;
+    /* Tamaño de las columnas */
+    float: left;
+    /* Donde se ponen las columnas */
+    color: #ffffff;
+}
+
+.column-1 h3 {
+    color: black;
+    text-align: center;
+}
+
+#section-2 {
+    background-color: #509EA0;
+    text-align: center;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    /* padding: 40px; */
+}
+
+
+/*
+ #section-3 {
+    padding: 0 7%;
+} */
+
+.column-4 {
+    width: 25%;
+    float: left;
+    /* padding: 40px; */
+}
+
+.column-4 p {
+    color: white;
+}
+
+#section-4 {
+    background-color: gray;
+}
+
+#section-5 {
+    background-color: black;
+    text-align: center;
+}
+
+.gallery {
+    width: 33.33%;
+    float: left;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
+/* Reglas auxiliares */
+
+.relleno-lateral {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.relleno-columnas {
+    padding: 20px;
+}
+
+#section-1 img {
+    padding: 50px;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+    #header {
+        padding: 150px 50px;
+        height: 100vh;
+    }
+    #header h1 {
+        font-size: 40px;
+    }
+    #header h2 {
+        font-size: 25px;
+    }
+    .column-2 {
+        width: 100%;
+    }
+    .relleno-lateral {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+    .relleno-columnas {
+        padding-right: 0px;
+    }
+    .gallery {
+        width: 50%;
+    }
+}
